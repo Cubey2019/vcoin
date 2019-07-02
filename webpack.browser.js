@@ -28,8 +28,10 @@ module.exports = {
         str(env.VCOIN_WORKER_FILE || '/vcoin-worker.js')
     }),
     new UglifyJsPlugin({
-      compress: {
-        warnings: true
+      uglifyOptions:{
+        compress: {
+          warnings: true
+        }
       }
     })
   ]
